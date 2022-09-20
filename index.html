@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Order food online from foodies</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    .header {
+      /* background-color: yellow; */
+      height: 200px;
+      background-color: white;
+      height: 200px;
+      /* position: fixed;
+      top: 0;
+      width: 100%; */
+
+    }
+
+    .logo1 {
+      height: 170px;
+      margin-left: 100px;
+
+    }
+
+    div a {
+      text-decoration: none;
+      margin-left: 100px;
+      color: black;
+
+    }
+
+    a:hover {
+      color: red;
+      text-decoration: underline;
+      transition: 0.4s;
+    }
+
+    .navelement {
+
+      margin-left: 60%;
+      display: block;
+      margin-top: -155px;
+      font-size: 22px;
+    }
+
+    .second {
+      background: url(./logo/bgfood.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      opacity: 3;
+      height: 310px;
+      color: white;
+      text-align: center;
+      padding-top: 20px;
+
+
+
+    }
+
+    h1 {
+      display: block;
+      margin-top: 30px;
+    }
+
+    .second h3 {
+      margin-top: 20px;
+    }
+
+    .second input {
+      margin-top: 15px;
+      width: 300px;
+      height: 40px;
+      font-size: 20px;
+    }
+
+    input::placeholder {
+      font-size: 15px;
+    }
+
+    .btn-findfood {
+      width: 100px;
+      height: 40px;
+      font-size: 15px;
+      background-color: white;
+      color: black;
+      margin-right: 10px;
+      cursor: pointer;
+      font-weight: bolder;
+      border-radius: 5px;
+    }
+
+    .btn-findfood:hover {
+
+      color: white;
+      background-color: black;
+      transition: 0.4s;
+    }
+
+    .navelement span {
+      margin-left: 60px;
+    }
+
+    .help {
+      margin-left: -50px;
+    }
+
+    .dosa {
+      height: 200px;
+      width: 90;
+      margin-left: 33px;
+    }
+
+    .cv {
+      height: 200px;
+      width: 230px;
+    }
+
+    .choleb {
+      height: 200px;
+      width: 250px;
+    }
+
+    .panipuri {
+      height: 200px;
+    }
+
+    .middle h1 {
+      margin-left: 20px;
+    }
+
+    span {
+      margin: 35px;
+    }
+
+    .middle p {
+      margin-left: 80px;
+    }
+
+    .middle {
+      display: flex;
+      box-sizing: border-box;
+      box-shadow: 0 2px 5px grey;
+    }
+
+    /* contactus{
+      position: fixed;
+    }
+     
+    .contactimg {
+      height: 40px;
+      margin-left: 95%;
+      background-color: yellow;
+    }
+    .contactus p{
+      height: 40px;
+      margin-left: 95%;
+      background-color: yellow;
+    } */
+
+    .heading-1 {
+      margin-left: 65px;
+      
+    }
+
+    /* .middle p{
+      color: red;
+      margin-left: 50px;
+      font-weight: bold;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    } */
+    .middle button {
+      padding: 6px;
+      /* border-radius: 10px; */
+      background-color: aliceblue;
+      /* box-shadow: 0 2px 5px 0 grey; */
+      font-size: 12px;
+      color: #000;
+      margin: 15px;
+      text-align: center;
+      /* margin-left: 75px; */
+    }
+
+    /* .middle button:hover{
+      background-color: white;
+      color: black;
+      cursor: pointer;
+      transition: 1s;
+    } */
+    .dis1,
+    .dis {
+      background: #000;
+      color: aliceblue;
+      margin-top: -5px;
+      padding-top: 5px;
+
+    }
+
+    .dis {
+      margin-left: 33px;
+    }
+
+    .order {
+      border-radius: 30px;
+    }
+
+    .dis button {
+      background-color: yellow;
+      cursor: pointer;
+      margin-left: 1px;
+      width: 99%;
+      font-size: 17px;
+      font-weight: bold;
+    }
+    .dis button:hover{
+         background-color: green;
+      color: white;
+      transition: 1s;
+    }
+    .dis1 button{
+         background-color: yellow;
+         cursor: pointer;
+         width: 99%;
+      font-size: 17px;
+      margin-left: 1px;
+      font-weight: bold;
+    }
+    .dis1 button:hover{
+      background-color: green;
+      color: white;
+      transition: 1s;
+    }
+    .middle span:hover{
+    
+               box-sizing: border-box;
+               box-shadow: 0px 0px 2px 2px  grey;
+               cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="cointainer">
+    <div class="header">
+      <img src="./logo/navbarlogo.png" class="logo1" />
+      <div class="navelement">
+        <a href="#" class="help">Help </a> <span>|</span>
+        <a href="#" class="signin">Sign in </a> <span>|</span>
+        <a href="#" class="cart">Cart</a>
+      </div>
+    </div>
+    <div class="second">
+      <h2 style="color: yellow;">GET 50% OFF ON FIRST ORDER</h2>
+      <h1>Great restaurants in Nagpur, delivering to you</h1>
+      <h3>Set exact location to find the right restaurants near you.</h3>
+      <input type="search" placeholder="Enter street name,area etc...">
+      <button class="btn-findfood">FIND FOOD</button>
+    </div>
+    <h1 class="heading-1">Popular food around you...</h1>
+    <!-- <div class="contactus">
+    <img src="./logo/Contactus.png" class="contactimg">
+    <p>Contact us</p></div> -->
+    <div class="middle">
+      <span><img src="./logo/dosaimg.jpg" class="dosa" />
+        <div class="dis">
+          <p>Masala dosa</p>
+          <!-- <p>South indian dish masala dosa <br>stuffed with spiced.</p> -->
+          <p>RS.<del>200</del>100</p>
+          <button>Order Now</button>
+        </div>
+
+      </span>
+      <span><img src="./logo/crispyvg.jpg" class="cv" />
+        <div class="dis1">
+          <p>Crispy veg</p>
+          <!-- <p>South indian dish masala dosa <br>stuffed with spiced.</p> -->
+          <p>RS.<del>300</del>150</p>
+          <button>Order Now</button>
+        </div>
+      </span>
+      <span><img src="./logo/cholebhatureimg.jpg" class="choleb" />
+        <div class="dis1">
+          <p>Chole bhature</p>
+          <!-- <p>South indian dish masala dosa <br>stuffed with spiced.</p> -->
+          <p>RS.<del>250</del>125</p>
+          <button>Order Now</button>
+        </div>
+      </span>
+      <span><img src="./logo/panipuriimg.jpg&width=500&resizemode=4" class="panipuri">
+        <div class="dis1">
+          <p>Panipuri</p>
+          <!-- <p>South indian dish masala dosa <br>stuffed with spiced.</p> -->
+          <p>RS.<del>80</del>40</p>
+          <button>Order Now</button>
+        </div>
+      </span>
+    </div>
+  </div>
+
+</body>
+
+</html>
